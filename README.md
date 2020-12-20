@@ -26,8 +26,8 @@ This will open a form where you need to fill in the app's name, description(opti
 After pressing "create app", you can find the authentication information needed to create the **praw.Reddit** instance. You should save the **personal use script**, **secret key** and **user agent** to somewhere safe.
 
 ## Step Two: Getting Started
-Praw can be installed using pip. After installing, you can import Praw by:
-`import praw` <br />
+Praw can be installed using pip. After installing, you can import Praw by: <br />
+`import praw` <br /> 
 `import pandas as pd` <br />
 We are going to store the results into Sqlite3 database after scraping the posts, thus we also need to import the following library: <br />
 `import sqlite3` <br />
@@ -48,7 +48,9 @@ We are going to store the results into Sqlite3 database after scraping the posts
 
 ## Step Four: Run the main function:
 #### The main function contains code that export the pandas dataframe into Sqlite3 database table
-After converting the column data type into data type that SQL database can accept, we can now export the pandas dataframe to sqlite3 with sqlalchemy.
+You need to change the **credit_id**,  **client_secret**, **user_agent** information to your own credential information; <br />
+You can set the reddit keyword you want to scrap and the maximun posts you need in the "get_posts_results" function; <br />
+After converting the column data type into data type that SQL database can accept, we can now export the pandas dataframe to sqlite3 with sqlalchemy. <br />
 * SQLite is a relational database management system contained in a C library
 * Sqlalchemy is an open-source SQL toolkit and object-relational mapper for the Python programming language released under the MIT License. We can use SQLAlchemy to create a connection to a new SQLite database, which will be store with a name that we defined.
 
