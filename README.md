@@ -17,8 +17,7 @@ Reddit is an American social news aggregation, web content rating, and discussio
 
 To get the authentication information, you need to create a reddit app from https://www.reddit.com/prefs/apps.
 You need to firstly click **create app** or **create another app**.
-![GitHub Logo](/images
-
+![Alt text](Instruction_picture/createApp.png)
 
 This will open a form where you need to fill in the app's name, description(optional) and the redirect uri. For the redirect uri you should write: http://localhost:8080
 
